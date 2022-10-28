@@ -13,7 +13,7 @@ const config = {
     },
     production: {
       applicationId: 'cl9qo0xpl01gay2013cl2xwvw',
-      url: 'http://localhost:3001/gloabal-new/custom-applications/channels',
+      url: 'https://mc.europe-west1.gcp.commercetools.com/gloabal-new/channels',
     },
   },
   oAuthScopes: {
