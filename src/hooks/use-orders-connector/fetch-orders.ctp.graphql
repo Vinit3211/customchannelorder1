@@ -1,0 +1,19 @@
+
+query FetchOrders($limit: Int!, $offset: Int!, $sort: [String!]) {
+  orders(limit: $limit, offset: $offset, sort: $sort) {
+    total
+    count
+    offset
+    results {
+    orderNumber
+    orderState
+    customerEmail
+    createdAt
+      lastModifiedAt
+    totalPrice{
+      centAmount
+    }
+          }
+        }
+      }
+  

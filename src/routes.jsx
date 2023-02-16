@@ -1,5 +1,6 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import Spacings from '@commercetools-uikit/spacings';
+import Orders from './components/orders';
 import Channels from './components/channels';
 import Welcome from './components/welcome';
 
@@ -22,6 +23,9 @@ const ApplicationRoutes = () => {
       <Switch>
         <Route path={`${match.path}/channels`}>
           <Channels linkToWelcome={match.url} />
+        </Route>
+        <Route path={`${match.path}/orders`}>
+          <Orders linkToWelcome={match.url} />
         </Route>
         <Route>
           <Welcome />

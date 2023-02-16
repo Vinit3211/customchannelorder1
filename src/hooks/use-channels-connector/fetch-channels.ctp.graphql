@@ -11,6 +11,13 @@ query FetchChannels($limit: Int!, $offset: Int!, $sort: [String!]) {
         locale
         value
       }
+          custom{
+      customFieldsRaw{
+        name
+        value
+       
+      }
+    }
     }
   }
 }

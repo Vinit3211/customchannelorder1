@@ -25,6 +25,27 @@ export default defineMessages({
     id: 'ChannelDetails.channelRolesLabel',
     defaultMessage: 'Channel roles',
   },
+
+  channelVenuesLabel: {
+    id: 'ChannelDetails.channelVenuesLabel',
+    defaultMessage: 'Venues',
+  },
+ 
+  channelDeliveryCountriesLabel: {
+    id: 'ChannelDetails.channelDeliveryCountriesLabel',
+    defaultMessage: 'DeliveryCountries',
+  },
+
+  channelCategoryNameLabel: {
+    id: 'ChannelDetails.channelCategoryNameLabel',
+    defaultMessage: 'CategoryName',
+  },
+
+  channelCategoryIDLabel: {
+    id: 'ChannelDetails.channelCategoryIDLabel',
+    defaultMessage: 'CategoryID',
+  },
+
   hint: {
     id: 'ChannelDetails.hint',
     defaultMessage:

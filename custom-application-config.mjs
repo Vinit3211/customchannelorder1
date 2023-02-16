@@ -9,15 +9,15 @@ const config = {
   cloudIdentifier: 'gcp-eu',
   env: {
     development: {
-      initialProjectKey: 'global-new',
+      initialProjectKey: 'bt_custom',
     },
     production: {
-      applicationId: 'cl9qo0xpl01gay2013cl2xwvw',
-      url: 'https://mc.europe-west1.gcp.commercetools.com/gloabal-new/channels',
+      applicationId: 'cle73yb95000auo01a2jamndx',
+      url: 'https://api.europe-west1.gcp.commercetools.com',
     },
   },
   oAuthScopes: {
-    view: ['view_products'],
+    view: ['view_orders','view_products'],
     manage: ['manage_products'],
   },
   icon: '${path:@commercetools-frontend/assets/application-icons/rocket.svg}',
@@ -30,6 +30,12 @@ const config = {
     {
       uriPath: 'channels',
       defaultLabel: 'Channels',
+      labelAllLocales: [],
+      permissions: [PERMISSIONS.View],
+    },
+    {
+      uriPath: 'orders',
+      defaultLabel: 'Orders',
       labelAllLocales: [],
       permissions: [PERMISSIONS.View],
     },

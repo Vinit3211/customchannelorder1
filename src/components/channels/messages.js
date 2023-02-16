@@ -3,7 +3,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   backToWelcome: {
     id: 'Channels.backToWelcome',
-    defaultMessage: 'Back to Welcome page',
+    defaultMessage: ' click Back to Welcome page',
   },
   title: {
     id: 'Channels.title',

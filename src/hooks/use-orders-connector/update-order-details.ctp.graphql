@@ -1,0 +1,20 @@
+mutation UpdateOrderDetails(
+  $orderId: String!
+  $version: Long!
+  $actions: [OrderUpdateAction!]!
+) {
+  updateOrder(id: $orderId, version: $version, actions: $actions) {
+    id
+    version
+    orderNumber
+    orderState
+    customerEmail
+    createdAt
+    lastModifiedAt
+    totalPrice{
+      centAmount
+    }
+      }
+  }
+    
+  

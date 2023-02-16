@@ -34,9 +34,11 @@ import { getErrorMessage } from '../../helpers';
 const ChannelDetails = lazy(() => import('../channel-details'));
 
 const columns = [
-  { key: 'name', label: 'Channel name' },
+  { key: 'name', label: 'Channel name ' },
   { key: 'key', label: 'Channel key', isSortable: true },
-  { key: 'roles', label: 'Roles' },
+  { key: 'roles', label: 'Roles' }
+ 
+  
 ];
 
 const itemRenderer = (item, column, dataLocale, projectLanguages) => {
@@ -89,6 +91,7 @@ const Channels = (props) => {
           as={RouterLink}
           to={props.linkToWelcome}
           label={intl.formatMessage(messages.backToWelcome)}
+          onClick={() => alert('Button clicked')}
           icon={<BackIcon />}
         />
         <Text.Headline as="h2" intlMessage={messages.title} />
@@ -103,7 +106,7 @@ const Channels = (props) => {
       {loading && <LoadingSpinner />}
 
       {channelsPaginatedResult ? (
-        <Spacings.Stack scale="l">
+        <Spacings.Stack scale="s">
           <DataTable
             isCondensed
             columns={columns}

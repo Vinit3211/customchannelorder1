@@ -12,5 +12,6 @@ mutation UpdateChannelDetails(
       locale
       value
     }
+    
   }
 }

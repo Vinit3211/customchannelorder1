@@ -1,0 +1,12 @@
+query FetchOrderDetails($orderId: String) {
+  order(id: $orderId) {
+    orderNumber
+    orderState
+    customerEmail
+    createdAt
+    lastModifiedAt
+    totalPrice{
+      centAmount
+    }
+  }
+}
