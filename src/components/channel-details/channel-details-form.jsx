@@ -156,9 +156,6 @@ const ChannelDetailsForm = (props) => {
         isRequired
         horizontalConstraint={13}
       />
-
-
-
     </Spacings.Stack>
   );
 
