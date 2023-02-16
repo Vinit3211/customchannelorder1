@@ -16,6 +16,7 @@ const config = {
       url: 'https://api.europe-west1.gcp.commercetools.com',
     },
   },
+  
   oAuthScopes: {
     view: ['view_orders','view_products'],
     manage: ['manage_products'],
