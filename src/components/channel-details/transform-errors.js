@@ -25,6 +25,7 @@ export const transformErrors = (graphQlErrors) => {
         transformedErrors.unmappedErrors.push(graphQlError);
       }
       return transformedErrors;
+      
     },
     {
       formErrors: {}, // will be mappped to form field error messages
