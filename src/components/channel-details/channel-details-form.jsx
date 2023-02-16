@@ -159,6 +159,7 @@ const ChannelDetailsForm = (props) => {
     </Spacings.Stack>
   );
 
+  
   return props.children({
     formElements,
     values: formik.values,
