@@ -13,6 +13,7 @@ query FetchChannelDetails($channelId: String!) {
         name
         value
        
+       
       }
     }
   }
