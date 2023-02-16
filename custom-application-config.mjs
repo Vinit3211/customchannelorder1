@@ -4,6 +4,7 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
  * @type {import('@commercetools-frontend/application-config').ConfigOptions}
  */
 
+
 const config = {
   name: 'Custom Applications',
   entryPointUriPath,
