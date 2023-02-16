@@ -3,6 +3,7 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
 /**
  * @type {import('@commercetools-frontend/application-config').ConfigOptions}
  */
+
 const config = {
   name: 'Custom Applications',
   entryPointUriPath,
@@ -16,7 +17,7 @@ const config = {
       url: 'https://api.europe-west1.gcp.commercetools.com',
     },
   },
-  
+
   oAuthScopes: {
     view: ['view_orders','view_products'],
     manage: ['manage_products'],
