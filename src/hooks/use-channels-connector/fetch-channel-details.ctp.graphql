@@ -12,8 +12,6 @@ query FetchChannelDetails($channelId: String!) {
       customFieldsRaw{
         name
         value
-       
-       
       }
     }
   }
