@@ -4,10 +4,9 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
  * @type {import('@commercetools-frontend/application-config').ConfigOptions}
  */
 
-
 const config = {
-  name: 'Custom Applications',
-  entryPointUriPath,
+  name: 'Custom application1',
+  entryPointUriPath:'Channels1',
   cloudIdentifier: 'gcp-eu',
   env: {
     development: {
@@ -15,7 +14,7 @@ const config = {
     },
     production: {
       applicationId: 'cle73yb95000auo01a2jamndx',
-      url: 'https://api.europe-west1.gcp.commercetools.com',
+      url: 'https://custom-order.vercel.app',
     },
   },
 
